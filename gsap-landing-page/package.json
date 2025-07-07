@@ -1,0 +1,20 @@
+{
+  "name": "gsap-landing-page",
+  "version": "1.0.0",
+  "description": "A landing page project using GSAP with scroll animations and cool effects.",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "start": "live-server public",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "gsap": "^3.11.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

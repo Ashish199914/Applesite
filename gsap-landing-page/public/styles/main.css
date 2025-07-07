@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboot', sans-serif;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: 48px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 40px;
+}
+
+nav ul li a {
+  font-weight: 300;
+  color: #adadad;
+  transition: 600ms;
+}
+
+nav ul li a:hover {
+  color: #f5f5f7;
+}
+
+/*--- section welcome ---*/
+.welcome {
+  width: 100%;
+  height: 70dvh;
+  background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/thai-aos-en-banner-hero-20160202?wid=1440&hei=689&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+/*--- section product ---*/
+.product-mac,
+.product-iphone,
+.product-watch,
+.product-ipad {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  cursor: pointer;
+}
+
+.product-mac h2,
+.product-iphone h2,
+.product-watch h2,
+.product-ipad h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1070px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.grid-product {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.grid-product:hover {
+  background: #e1e1e1;
+}
+
+.grid-product img {
+  width: 300px;
+}
+
+.grid-detail {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.grid-detail p:last-child {
+  transition: .5s;
+  margin-top: 10px;
+}
+
+.grid-product:hover>.grid-detail p:last-child {
+  color: #3498db;
+}
+
+/*-------*/
+.grid-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-product-full {
+  background: #f1f1f1;
+  grid-column: span 3;
+  display: flex;
+  position: relative;
+}
+
+.grid-detail-sum {
+  position: absolute;
+  top: 35%;
+  right: 12%;
+  text-align: center;
+}
+
+.grid-detail-sum h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.grid-detail-sum p {
+  margin: 20px 0;
+}
+
+.grid-detail-sum a {
+  color: #3498db;
+}
+
+.grid-detail-sum a:hover {
+  text-decoration: underline;
+}
+
+/*--- footer ---*/
+footer {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.footer-main {
+  max-width: 1070px;
+  width: 100%;
+}
+
+.footer-detail {
+  font-size: .7rem;
+  color: #95a5a6;
+  padding: 20px 0;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.footer-detail a {
+  color: #2c3e50;
+}
+
+.footer-detail a:hover {
+  text-decoration: underline;
+}
+
+.footer-welcome {
+  display: flex;
+  margin: 20px 0;
+  font-size: .8rem;
+  color: #34495e;
+}
+
+.footer-welcome i {
+  margin-right: 10px;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-ul ul {
+  list-style: none;
+}
+
+.footer-ul ul li {
+  margin: 7px 0;
+}
+
+.footer-ul ul li h4 {
+  color: #34495e;
+  font-size: .7rem;
+}
+
+.footer-ul ul li a {
+  color: #7f8c8d;
+  font-size: .7rem;
+}
+
+.footer-ul ul li a:hover {
+  text-decoration: underline;
+}
+
+#mt {
+  padding-top: 30px;
+}
+
+.footer-contact {
+  border-bottom: 1px solid #bdc3c7;
+  padding: 12px 0;
+  margin: 10px 0;
+  color: #7f8c8d;
+  font-size: .7rem;
+}
+
+.footer-contact a {
+  color: #3498db;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #7f8c8d;
+  font-size: .7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright ul {
+  display: flex;
+  list-style: none;
+  width: auto;
+}
+
+.footer-copyright ul li {
+  margin: 0 10px;
+}
+.footer-copyright ul li {
+  margin-left: 0;
+}
+.footer-copyright ul li a {
+  color: #7f8c8d;
+}
+
+.footer-copyright ul li a:hover {
+  text-decoration: underline;
+}
+
+.vr {
+  height: 15px;
+  width: 1px;
+  background: #bdc3c7;
+}
+
+.footer-lang {
+  display: flex;
+}
+
+.footer-lang p {
+  margin: 0 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+
+.ipad-mini {
+  height: 580px;
+  width: 100%;
+  background-color: #F5F5F7;
+  background: url(https://www.apple.com/v/home/bt/images/heroes/ipad-mini/hero_ipad_mini_announce__fx0v6ox8z3u6_large.jpg) no-repeat center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ai-tag {
+  font-size: 14px;
+  font-weight: 350;
+  letter-spacing: -0.016em;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  color: #6e6e73;
+}
+
+.ai-tag span {
+  font-size: 7px;
+}
+
+.sections {
+  height: 580px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-h2 {
+  font-weight: 600;
+  letter-spacing: -.05em;
+  font-size: 56px;
+}
+
+.undertext-1 {
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.undertext-2 {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: .012em;
+  color: #6e6e73;
+  margin-top: 8px;
+}
+
+.buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.button1 {
+  font-size: 17px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  border: solid 1px #0071e3;
+  background-color: #0071e3;
+  color: white;
+  padding: 11px 21px;
+  border-radius: 26px;
+  min-width: 28px;
+}
+
+.button1:hover {
+  background-color: #0077ED;
+  cursor: pointer;
+}
+
+.button2 {
+  font-size: 17px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  border: solid 1px #0071e3;
+  min-width: 28px;
+  padding: 11px 21px;
+  border-radius: 26px;
+  color: #0071e3;
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+
+.button2:hover {
+  background-color: #0077ED;
+  color: white;
+}
+
+.section-text {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.iphone16-pro {
+  height: 580px;
+  width: 100%;
+  background-color: #F5F5F7;
+  background: url(https://www.apple.com/v/home/bt/images/heroes/iphone-16-pro/hero_iphone16pro_avail__fnf0f9x70jiy_large.jpg) no-repeat center;
+  color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.iphone16 {
+  height: 70dvh;
+  width: 100%;
+  background-color: #F5F5F7;
+  background: url(https://www.apple.com/v/home/bt/images/heroes/iphone-16/hero_iphone16_avail__euwzls69btea_large.jpg) no-repeat center;
+  color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* grid section style */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  height: 580px;
+}
+
+.tiny-2 {
+  font-size: 8px;
+}
+
+.grid-item-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-button1 {
+  font-size: 17px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  border: solid 1px #0071e3;
+  background-color: #0071e3;
+  color: white;
+  padding: 11px 21px;
+  border-radius: 26px;
+  min-width: 28px;
+}
+
+.grid-button2 {
+  font-size: 17px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  border: solid 1px #0071e3;
+  min-width: 28px;
+  padding: 11px 21px;
+  border-radius: 26px;
+  color: #0071e3;
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.grid-item-h4 {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+
+}
+
+.grid-item-p1 {
+  font-size: 21px;
+  line-height: 1.19;
+  font-weight: 400;
+  letter-spacing: .011em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.grid-ai-tag {
+  font-size: 14px;
+  font-weight: 350;
+  letter-spacing: -0.016em;
+  color: #6e6e73;
+}
+
+.red-text {
+  color: #FE6A14;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-left: 36px;
+}
+
+.grid-buttons {
+  margin-top: 4px;
+}
+
+.grid-section2-column5 {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+.grid-item1 {
+  background: url(https://www.apple.com/v/home/bt/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg) no-repeat center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  padding-bottom: 27px;
+  padding-top: 27px;
+}
+
+.grid-item2 {
+  background: url(https://www.apple.com/v/home/bt/images/promos/airpods-pro-2/promo_airpods_pro_2_avail__vkitqi3okwie_large.jpg) no-repeat center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  color: white;
+  padding-bottom: 27px;
+  padding-top: 27px;
+}
+
+.grid-item3 {
+  background: url(https://www.apple.com/v/home/bt/images/promos/ipad-mini/promo_ipad_mini_announce__dnt5vgkh34uq_large.jpg) no-repeat center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-bottom: 27px;
+  padding-top: 53px;
+}
+
+.grid-item4 {
+  background: url(https://www.apple.com/v/home/bt/images/promos/apple-watch-ultra-2/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg) no-repeat center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  color: white;
+  padding-bottom: 27px;
+  padding-top: 53px;
+}
+
+.grid-item5 {
+  background: url(https://www.apple.com/v/home/bt/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg) no-repeat center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-bottom: 27px;
+  padding-top: 53px;
+}
+
+.grid-item6 {
+  background: url(https://www.apple.com/v/home/bt/images/promos/apple-card/promo_apple_card__5cm7draujpey_large.jpg) no-repeat center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-bottom: 27px;
+  padding-top: 53px;
+}
+
+@media screen and (max-width: 1068px) {
+  body {
+    background-color: rgba(255, 255, 145, 0);
+  }
+}
+
+
+/* phones */
+
+@media screen and (max-width: 734px) {
+
+  /* top half  */
+
+  .ipad-mini {
+    background: url(https://www.apple.com/v/home/bt/images/heroes/ipad-mini/hero_ipad_mini_announce__fx0v6ox8z3u6_small.jpg)no-repeat center;
+    background-size: cover;
+  }
+
+  .iphone16-pro {
+    background: url(https://www.apple.com/v/home/bt/images/heroes/iphone-16-pro/hero_iphone16pro_avail__fnf0f9x70jiy_small.jpg)no-repeat center;
+    background-size: cover;
+  }
+
+  .iphone16 {
+    background: url(https://www.apple.com/v/home/bt/images/heroes/iphone-16/hero_iphone16_avail__euwzls69btea_small.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .section-h2 {
+    font-size: 32px;
+  }
+
+  .undertext-1 {
+    font-size: 19px;
+
+  }
+
+  .button1 {
+    font-size: 14px;
+
+  }
+
+  .button2 {
+    font-size: 14px;
+  }
+
+  /* middle grid section */
+
+  .grid-item {
+    height: 500px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+
+  .grid-item-h4 {
+    font-size: 32px;
+  }
+
+  .grid-item-p1 {
+    font-size: 19px;
+  }
+
+  .grid-button1 {
+    font-size: 14px;
+  }
+
+  .grid-button2 {
+    font-size: 14px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .grid,
+  .grid-full {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-product-full {
+    grid-column: span 1;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .grid-detail-sum {
+    position: unset;
+  }
+
+  .grid-product-full img {
+    width: 100%;
+  }
+
+  .grid-detail-sum h2 {
+    font-size: 28px;
+  }
+
+  .footer-ul {
+    flex-direction: column;
+  }
+    .footer-copyright{
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+        .footer-copyright ul{
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        
+}
